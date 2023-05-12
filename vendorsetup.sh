@@ -1,0 +1,3 @@
+add_lunch_combo cm_a109-user
+add_lunch_combo cm_a109-userdebug
+add_lunch_combo cm_a109-eng
