@@ -1,8 +1,8 @@
 LOCAL_PATH := device/Micromax/A109
 
-TARGET_BOARD_PLATFORM := mt6735               # From ro.mediatek.platform, but lowercase value
+TARGET_BOARD_PLATFORM := mt6589               # From ro.mediatek.platform, but lowercase value
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := Primo_RX5     # From ro.product.board
+TARGET_BOOTLOADER_BOARD_NAME := Micromax_A109     # From ro.product.board
 
 # These two are for MTK Chipsets only
 BOARD_USES_MTK_HARDWARE := true

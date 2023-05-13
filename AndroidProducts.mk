@@ -6,4 +6,4 @@ LOCAL_PATH := device/Micromax/A109
 
 #PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_A109.mk
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/recovery/omni_A109.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_A109.mk
