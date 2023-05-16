@@ -8,5 +8,5 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES)
 	$(call pretty,"Target boot image: $@")
-	perl device/micromax/A109/repack-MT65xx.pl -boot device/micromax/A109/kernel out/target/product/A109/root $@ $(MKBOOTIMG)
+	perl device/micromax/A109/repack-MT65xx.pl -boot device/micromax/A109/prebuilt/kernel out/target/product/A109/root $@ $(MKBOOTIMG)
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_BOOTIMAGE_PARTITION_SIZE),raw)
