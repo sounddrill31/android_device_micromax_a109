@@ -12,7 +12,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
