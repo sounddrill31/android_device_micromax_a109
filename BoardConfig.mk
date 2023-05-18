@@ -80,3 +80,11 @@ BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
 
 PB_GO := TRUE
 PB_FORCE_DD_FLASH := TRUE
+#TW_EXCLUDE_ENCRYPTED_BACKUPS := TRUE
+#TW_NO_EXFAT := true
+#TW_EXCLUDE_SUPERSU := true
+#TW_EXCLUDE_MTP := true
+#TW_OEM_BUILD := true
+#TW_NO_USB_STORAGE := true
+#TW_NO_EXFAT_FUSE := true
+#userdataencryptbackup=0
