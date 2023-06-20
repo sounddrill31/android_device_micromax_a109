@@ -76,7 +76,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 
-BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
+#BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
 
 PB_GO := TRUE
 PB_FORCE_DD_FLASH := TRUE
