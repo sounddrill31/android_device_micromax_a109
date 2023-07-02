@@ -1,6 +1,10 @@
-Build using TWRPDTGEN. 
+## TWRP for Micromax A109 Android 4.4.2
 
-Not tested but you'll probably have better luck with this than the other branches.
-Credit to: https://github.com/azwhikaru/Action-TWRP-Builder for github actions
+### Specifications
+https://m.gsmarena.com/micromax_a109_canvas_xl2-7139.php
 
-(not booting for some reason.)
+### Working
+- Need to test
+
+### Issues
+- Need to test
