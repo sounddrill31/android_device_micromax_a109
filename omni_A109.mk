@@ -1,4 +1,4 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := A109
