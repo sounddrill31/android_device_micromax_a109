@@ -9,3 +9,4 @@ https://m.gsmarena.com/micromax_a109_canvas_xl2-7139.php
 ### Issues
 - Need to test
  
+Credit to https://github.com/HemanthJabalpuri/ for this branch and a lot of work on this device.
