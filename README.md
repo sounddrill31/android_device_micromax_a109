@@ -8,3 +8,4 @@ https://m.gsmarena.com/micromax_a109_canvas_xl2-7139.php
 
 ### Issues
 - Need to test
+ 
