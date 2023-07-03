@@ -21,19 +21,8 @@ BOARD_MKBOOTIMG_ARGS += --kernel_offset 0x00008000
 BOARD_MKBOOTIMG_ARGS += --second_offset 0x00f00000
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/bootimg/custombootimg.mk
 BOARD_FLASH_BLOCK_SIZE := 131072
-
-#TODO: change to 6313984 after some more excluding
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 
 # TWRP
-TW_THEME := portrait_mdpi
+TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
-
-TW_EXCLUDE_ENCRYPTED_BACKUPS := true
-TW_EXCLUDE_BASH := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_MTP := true
-TW_NO_EXFAT := true
-TW_EXCLUDE_TZDATA := true
-TW_USE_TOOLBOX := true
-TW_EXCLUDE_SUPERSU := true
