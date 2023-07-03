@@ -35,5 +35,5 @@ TW_EXCLUDE_NANO := true
 TW_EXCLUDE_MTP := true
 TW_NO_EXFAT := true
 TW_EXCLUDE_TZDATA := true
-
+TW_USE_TOOLBOX := true
 TW_EXCLUDE_SUPERSU := true
