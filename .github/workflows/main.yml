@@ -41,6 +41,9 @@ on:
         description: 'BUILD_TARGET'
         required: true
         default: 'recovery'
+      IGNORE_ERRORS:
+        description: 'SED command to disable errors'
+        default: 'no'
 
 jobs:
   build:
@@ -60,6 +63,7 @@ jobs:
         echo "Device Name: ${{ github.event.inputs.DEVICE_NAME }}"
         echo "Makefile Name: ${{ github.event.inputs.MAKEFILE_NAME }}"
         echo "Build Target: ${{ github.event.inputs.BUILD_TARGET }}.img"
+        echo "Ignore Errors: ${{ github.event.inputs.IGNORE_ERRORS }}"
         echo "::endgroup::"
  
     # You might want to Checkout your repo first, but not mandatory
@@ -114,6 +118,11 @@ jobs:
     - name: Clone device tree
       run: |
         git clone ${{ github.event.inputs.DEVICE_TREE_URL }} -b ${{ github.event.inputs.DEVICE_TREE_BRANCH }} ./${{ github.event.inputs.DEVICE_PATH }}
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+    - name: Modify Files
+      if: |
+        github.event.inputs.IGNORE_ERRORS != 'no'
+      run: sed -i 's/$(error stop)/ /g' build/core/main.mk}
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Clone common tree
