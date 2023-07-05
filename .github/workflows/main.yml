@@ -111,7 +111,7 @@ jobs:
     - name: Modify Files
       if: |
         github.event.inputs.IGNORE_ERRORS != 'no'
-      run: sed -i 's/$(error stop)/ /g' build/core/main.mk}
+      run: sed -i 's/$(error stop)/ /g' build/core/main.mk
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
     - name: Check Build Tree
       uses: haya14busa/action-cond@v1
