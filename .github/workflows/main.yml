@@ -23,6 +23,12 @@ on:
         description: 'DEVICE_PATH'
         required: true
         default: 'device/micromax/A109'
+      COMMON_TREE_URL:
+        description: 'COMMON_TREE_URL (if no common tree, leave blank)'
+        required: false
+      COMMON_PATH:
+        description: 'COMMON_PATH (if no common tree, leave blank)'
+        required: false
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
@@ -35,9 +41,6 @@ on:
         description: 'BUILD_TARGET'
         required: true
         default: 'recovery'
-      IGNORE_ERRORS:
-        description: 'SED command to disable errors'
-        default: 'no'
 
 jobs:
   build:
@@ -57,7 +60,6 @@ jobs:
         echo "Device Name: ${{ github.event.inputs.DEVICE_NAME }}"
         echo "Makefile Name: ${{ github.event.inputs.MAKEFILE_NAME }}"
         echo "Build Target: ${{ github.event.inputs.BUILD_TARGET }}.img"
-        echo "Ignore Errors: ${{ github.event.inputs.IGNORE_ERRORS }}"
         echo "::endgroup::"
  
     # You might want to Checkout your repo first, but not mandatory
@@ -73,7 +75,6 @@ jobs:
         sudo apt update
         sudo apt -y upgrade
         sudo apt -y install gperf gcc-multilib gcc-10-multilib g++-multilib g++-10-multilib libc6-dev lib32ncurses5-dev x11proto-core-dev libx11-dev tree lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc bc ccache lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-gtk3-dev libxml2 lzop pngcrush schedtool squashfs-tools imagemagick libbz2-dev lzma ncftp qemu-user-static libstdc++-10-dev libncurses5 python
-
     - name: Install OpenJDK
       uses: actions/setup-java@v3
       with:
@@ -86,7 +87,6 @@ jobs:
       with:
           ssh-private-key: |
               ${{ secrets.SSH_PRIVATE_KEY }}
-
     - name: Install repo
       run: |
         mkdir ~/bin
@@ -108,7 +108,20 @@ jobs:
       run: |
         repo sync -j$(nproc --all) --force-sync
       working-directory: workspace
-    
+      
+    - name: Clone device tree
+      run: |
+        git clone ${{ github.event.inputs.DEVICE_TREE_URL }} -b ${{ github.event.inputs.DEVICE_TREE_BRANCH }} ./${{ github.event.inputs.DEVICE_PATH }}
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+
+    - name: Clone common tree
+      if: |
+        github.event.inputs.COMMON_TREE_URL != null
+        && github.event.inputs.COMMON_PATH != null
+      run: |
+        git clone ${{ github.event.inputs.COMMON_TREE_URL }} ./${{ github.event.inputs.COMMON_PATH }}
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+
     - name: Check Build Tree
       uses: haya14busa/action-cond@v1
       id: buildtree
@@ -128,11 +141,7 @@ jobs:
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 12
-    - name: Modify Files
-      if: |
-        github.event.inputs.IGNORE_ERRORS != 'no'
-      run: sed -i 's/$(error stop)/ /g' build/core/main.mk
-      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+
     - name: Building recovery
       run: |
         source build/envsetup.sh
