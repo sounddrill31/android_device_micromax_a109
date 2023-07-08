@@ -26,9 +26,9 @@ on:
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-      COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: false
+      IGNORE_ERRORS:
+        description: 'SED command to disable errors'
+        default: 'no'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
@@ -141,7 +141,12 @@ jobs:
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 12
-
+    - name: Modify Files
+      if: |
+        github.event.inputs.IGNORE_ERRORS != 'no'
+      run: sed -i 's/$(error stop)/ /g' build/core/main.mk
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+      
     - name: Building recovery
       run: |
         source build/envsetup.sh
