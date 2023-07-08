@@ -23,9 +23,9 @@ on:
         description: 'DEVICE_PATH'
         required: true
         default: 'device/micromax/A109'
-      COMMON_TREE_URL:
-        description: 'COMMON_TREE_URL (if no common tree, leave blank)'
-        required: false
+      ZULU_VERSION:
+        description: 'ZULU VERSION, 6, 8, etc'
+        default: '6'
       IGNORE_ERRORS:
         description: 'SED command to disable errors'
         default: 'no'
@@ -79,7 +79,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         distribution: 'zulu'
-        java-version: '8'
+        java-version: ${{ github.event.inputs.ZULU_VERSION }}
 
     - name: Setup SSH Keys
       if: ${{ startsWith(github.event.inputs.MANIFEST_URL, 'git@github.com') }}
