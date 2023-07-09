@@ -1,0 +1,143 @@
+# All blobs are from "yulong89_wet_kk-user 4.4.2 KOT49H 146 release-keys" and are pinned with sha1sum values
+
+# Audio
+
+# Audio-Hardware
+vendor/lib/hw/audio.a2dp.blueangel.so|03365e88a2ca939812f0333be416e25e665ff41d
+
+# Bluetooth
+vendor/lib/hw/bluetooth.blueangel.so|78b72b904040bb3866377254e4e350d9754eaacd
+
+# Camera
+
+# Charger
+lib/libshowlogo.so|7cb7bb9cec4d22d58dd363f01a37d0cefa12b5fa
+
+# DRM
+
+# DRM-Widevine
+vendor/lib/mediadrm/libwvdrmengine.so|529f02f0119e2ee259b51a078bcb5427eac53074
+
+# Display-Hardware
+vendor/lib/hw/gralloc.mt6589.so|2749eb26f5fb46154c5cc5a74057a34f8e07c53f
+
+# Firmware
+etc/firmware/catcher_filter_1_3g_n.bin|0ac2c35d64744aa2e91a5d918c174e92160daeb4
+etc/firmware/modem_1_3g_n.img|01062391840623354d98adce9188ca1c67f73f56
+etc/firmware/mt6628/mt6628_fm_rom.bin|db282e811db760b586e18e3330f651e33438c06b
+etc/firmware/mt6628/mt6628_fm_v1_coeff.bin|dbe3a0296bfb6fbbec55cc31cb6ff93f470bf4af
+etc/firmware/mt6628/mt6628_fm_v1_patch.bin|12607e959e39c00a20c97297b6e9943b3ebc4322
+etc/firmware/mt6628/mt6628_fm_v2_coeff.bin|6d2cbc5c7f9ccc9cbbe2f619856d1804fd895a28
+etc/firmware/mt6628/mt6628_fm_v2_patch.bin|61476f9d1055c7e467b0e5a1532e0ca9084cc9ba
+etc/firmware/mt6628/mt6628_fm_v3_coeff.bin|c5c0b2d8a96f1c02a5a8ff6661365ac648f2bf73
+etc/firmware/mt6628/mt6628_fm_v3_patch.bin|7835ed0fb0193d51dfc3beb0c2494ec94c3b460d
+etc/firmware/mt6628/mt6628_fm_v4_coeff.bin|c5c0b2d8a96f1c02a5a8ff6661365ac648f2bf73
+etc/firmware/mt6628/mt6628_fm_v4_patch.bin|7835ed0fb0193d51dfc3beb0c2494ec94c3b460d
+etc/firmware/mt6628/mt6628_fm_v5_coeff.bin|c5c0b2d8a96f1c02a5a8ff6661365ac648f2bf73
+etc/firmware/mt6628/mt6628_fm_v5_patch.bin|7835ed0fb0193d51dfc3beb0c2494ec94c3b460d
+etc/firmware/mt6628_ant_m1.cfg|22f2f7348daa65bb11e1c534b08e73d0ef1328f9
+etc/firmware/mt6628_patch_e1_hdr.bin|658e7e0861399eb7427cce68287202ae9627d4f8
+etc/firmware/mt6628_patch_e2_0_hdr.bin|2d7753b029b4d8e8707eaf4539c7f8eddfc00f57
+etc/firmware/mt6628_patch_e2_1_hdr.bin|71f239add521373f8a4362f0403c6d8100d5fa1d
+etc/firmware/S_ANDRO_SFL.ini|5132e82f2dba7df7cab3bf6a1c466aa3197ce0e5
+etc/firmware/WIFI_RAM_CODE|810b8367ed2c4731206563c19e053864855e3167
+etc/firmware/WIFI_RAM_CODE|810b8367ed2c4731206563c19e053864855e3167_E6
+etc/firmware/WIFI_RAM_CODE|810b8367ed2c4731206563c19e053864855e3167_MT6628
+etc/firmware/WIFI_RAM_CODE|810b8367ed2c4731206563c19e053864855e3167_MT6630
+etc/firmware/WIFI_RAM_CODE|810b8367ed2c4731206563c19e053864855e3167_SOC
+etc/firmware/WMT.cfg|d4e0634b73ec6b95f0e109512b8b15ceb8f86ab3
+
+# GPS
+
+# GPS-Hardware
+
+# Graphics
+vendor/lib/egl/libEGL_mtk.so|46e7f3b837ccfd64f0da19bd3a78d32f76a4f117
+vendor/lib/egl/libGLESv1_CM_mtk.so|0913bb071188d8b289ea0996dcf46671139d2c95
+vendor/lib/egl/libGLESv2_mtk.so|1f593bcc4ac2401ef39bd16898358358476f17f6
+
+# Listen
+
+# Media
+
+# Media-Hardware
+
+# Perf
+
+# Postprocessing
+
+# QMI
+
+# Radio
+
+# Sensors
+
+# Time
+
+# WiFi
+
+# Misc
+-vendor/app/bookMyShow.apk|962f4fa7f4fa255c50d8770d45af88bfbd2647de
+-vendor/app/CleanMaster_New.apk|7a7827ce2a099545922badfb8904e6c17d26c83c
+-vendor/app/GamesClub_v1.apk|598fc10114b36434346f948a40471700f101a6f4
+-vendor/app/Getit_9Apr14.apk|0221756d6b3123cdb4400d4d71a0396aa8648911
+-vendor/app/ggj_android_all_multilang.apk|4ad6d5dfd89f9a23fcc7ba2fd63a7476b5413dc1
+-vendor/app/hike.apk|757b5f8b81365520756c828cd2893281a877307e
+-vendor/app/MAd_v2.0.0_live_all.apk|aef4fa442fa6c27574e4d6b4b26458ac81a15d68
+-vendor/app/Marbell_IG-IW.apk|7984d73c38acf0353ceb1dc80aff3de4b7a84af0
+-vendor/app/MiGames_in_Released_IW.apk|b306e79296de807c645e4f70ab1eb09ccb6aa8cf
+-vendor/app/MiLive.apk|b8e434d89c121c62f708d7e3656207ee213b7b97
+-vendor/app/moffice_ml-IW.apk|9c1c5e052eac7ff27906d43ce69b651ec581bf9d
+-vendor/app/OperaBrandingProvide-Micromax.apk|2ce7123f442fac140aa506f974bc5508b8226e19
+-vendor/app/operamini_IW.apk|553ce61adbe50c318ac2e5348e4290a4d08fb948
+-vendor/app/Reverie_A109_KK.apk|8ef6c051216294bffb984c7ed60586b3393e253a
+-vendor/app/Reverie_SmartPad_A109_KK.apk|63390f72784da517dc8c2269fa859d45e51383e7
+-vendor/app/SwiftKey.apk|50aba1ca794249439cd3bde277fc85e1d69f9d9a
+vendor/bin/pvrsrvctl|f3d3670b3c2d99fa3f98d8487c0578c309ac85ce
+vendor/bin/rc.fac|77d2eb0934612be836139073f4f2dee8623c2143
+vendor/data/MAd/mdcall/mAdCall/Banner/72|0ff534707b85b30e455c798643aa979549e2ca55
+vendor/data/MAd/mdcall/mAdCall/Banner/73|0ff534707b85b30e455c798643aa979549e2ca55
+vendor/data/MAd/mdcall/mAdCall/Banner/74|22df0b1ca32669d3be96a9c7e8ecbd766ee989d7
+vendor/data/MAd/mdcall/mAdCall/Banner/75|a5866844b92b54658255e40853d5862af58bf63a
+vendor/data/MAd/mdcall/mAdCall/Banner/76|085863e21908e217ef529a58bb38396c42da3528
+vendor/data/MAd/mdcall/mAdCall/inbuild_XML/inbuild.xml|6adeec8c38257f0e2b725d2561fc22fdbe0cf389
+vendor/data/MAd/mdcall/mAdCall/PreAds/72|3f83583fd6d6ecf54b1ad3e3bd3055e9ffb69cce
+vendor/data/MAd/mdcall/mAdCall/PreAds/73|17ee9fa31afa646b45709bca73475e585d658b76
+vendor/data/MAd/mdcall/mAdCall/PreAds/74|264b42a0db1afed4187b604e679c038ad50227a1
+vendor/data/MAd/mdcall/mAdCall/PreAds/75|9cef4128458b512ecf715a92ab525f19d9ec758e
+vendor/data/MAd/mdcall/mAdCall/PreAds/76|2f79cc2b810f03792c34672adb239fa44b6464ab
+vendor/data/MAd/mdcall/mAdCall/PreImages/19|2e33dd78466e15ee5ab8caa2af8add593dd6c2f6
+vendor/data/MAd/mdcall/mAdCall/PreImages/20|2e33dd78466e15ee5ab8caa2af8add593dd6c2f6
+vendor/data/MAd/mdcall/mAdCall/PreImages/21|2e33dd78466e15ee5ab8caa2af8add593dd6c2f6
+vendor/data/MAd/mdcall/mAdCall/PreImages/22|2e33dd78466e15ee5ab8caa2af8add593dd6c2f6
+vendor/lib/drm/libdrmwvmplugin.so|3ef593f793f9de394bf504bf434f8c72b66530a9
+vendor/lib/libBLPP.so|f2b8a48fb585bde86f87a1c915fdea7c57ffdb3b
+vendor/lib/libcleaninject.so|359f063a47ab6711c0c1f03451c4767f4abd6fdc
+vendor/lib/libglslcompiler.so|06586539151b421fd69b1cba6a38a79ea80acb9c
+vendor/lib/libIMGegl.so|a1343254efda526a4be72cdf1be621aa1d03f539
+vendor/lib/libkcmutil.so|6f23491ecdb78924b239e3729b922cd599daf219
+vendor/lib/libmessagebox_ext.so|5fcd21aa4038f92a6ab49b7bc46b1a52ad9c51d0
+vendor/lib/libMusicHunterClient.so|8f3d67521063f3a85ce480484b50106ed5cbf241
+vendor/lib/libom.so|c34cbbbd69e4e8a984591aad73652dabb72dc2c7
+vendor/lib/libpvr2d.so|1b574b28f1621e6b5863fa424dbbc6ab5bc8fb9a
+vendor/lib/libpvrANDROID_WSEGL.so|2c4a67f8b673247d004ab3b64bea00f9ddec7014
+vendor/lib/libPVRScopeServices.so|d536320d363d50e05f30bb9394a98a4c3063f61c
+vendor/lib/libs3efacebook_ext.so|9e6998b7ab5c45990e1348ab4dc8bc183f45158b
+vendor/lib/libsrv_init.so|ef26b94a9a0f2957e0a0bc4659c5600871c57b40
+vendor/lib/libsrv_um.so|e882cda8fe88973ebc4a8a366c9853962c241b2a
+vendor/lib/libswiftkeysdk-java-internal.so|49112acf7b182342cd569a48c8039fabaa349ff0
+vendor/lib/libsyscore.so|049b47e248524cf26a83240daf773621cfd5d5f8
+vendor/lib/libusc.so|32d792c2c89cda643455a644fbada6d9ada33bb7
+vendor/lib/libvlife_AESCipher.so|609e5c591922220ebec15d3ec06019b713bf50d6
+vendor/lib/libvlife_ffmpeg.so|8451644efe276c16a9f4ecb0878461d3cf31f5b2
+vendor/lib/libvlife_jpeg.so|70bd95164d1302886716e09b7ae9163fa8130c68
+vendor/lib/libvlife_openglutil.so|f021318496f496a2dd0c71c8c9509f81e797be40
+vendor/lib/libvlife_png.so|be0bcf5aa859801704f805eeba1424e45f1c7dd9
+vendor/lib/libvlife_render.so|0b633c30c04754b240ad16bffd7040c786f69767
+vendor/lib/libvlife_render2.so|774d6b2b318260e7bb59facaa3c97b85f947df69
+vendor/lib/libvlife_sdl.so|b76422b3f56634ee3bf9f4f49e71904324c43e0b
+vendor/lib/libwvdrm_L3.so|a47cdb6c27e91e2a77576aad90eb7d95d248a255
+vendor/lib/libwvm.so|f4186ce3afa8fb93195c305f36fbc95aaae80ae0
+vendor/lib/libWVStreamControlAPI_L3.so|be51ff3e06935b3365770e302c7ff049050b8d39
+vendor/lib/libww.so|62eae8ce8cf021bf81b2f380781c9ac59fa22542
+-vendor/operator/app/JellyJumpers_IG-IW.apk|7141a8cadcdc258527c87eab7c4f68f8422d1571
