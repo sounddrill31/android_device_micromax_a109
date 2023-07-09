@@ -85,6 +85,9 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 # COMMON_GLOBAL_CFLAGS += -DMTK_G_MT6589
 # COMMON_GLOBAL_CPPFLAGS += -DMTK_G_MT6589
 
+# These two are for MTK Chipsets only
+BOARD_USES_MTK_HARDWARE := true
+BOARD_HAS_MTK_HARDWARE := true
 
 # TWRP Configuration
 TW_THEME := portrait_mdpi
@@ -92,6 +95,7 @@ TW_EXTRA_LANGUAGES := false
  TW_SCREEN_BLANK_ON_BOOT := true
 #TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+DEVICE_RESOLUTION := 540x960
 
 #BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
 
