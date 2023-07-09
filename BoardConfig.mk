@@ -87,10 +87,10 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 
 # TWRP Configuration
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 TW_EXTRA_LANGUAGES := false
  TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
+#TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 
 #BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
