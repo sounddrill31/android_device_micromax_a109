@@ -6,3 +6,4 @@
 #
 
 LOCAL_PATH := device/micromax/A109
+$(call inherit-product, vendor/micromax/A109/A109-vendor.mk)
