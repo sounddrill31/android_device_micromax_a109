@@ -85,9 +85,10 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 # COMMON_GLOBAL_CFLAGS += -DMTK_G_MT6589
 # COMMON_GLOBAL_CPPFLAGS += -DMTK_G_MT6589
 
-# These two are for MTK Chipsets only
+# These are for MTK Chipsets only
 BOARD_USES_MTK_HARDWARE := true
 BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAS_MTK := true 
 
 # TWRP Configuration
 TW_THEME := portrait_mdpi
