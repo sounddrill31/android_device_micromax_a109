@@ -97,7 +97,7 @@ TW_EXTRA_LANGUAGES := false
 #TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 DEVICE_RESOLUTION := 540x960
-
+RECOVERY_VARIANT := philz
 #BOARD_CUSTOM_BOOTIMG_MK := device/micromax/A109/custombootimg.mk
 
 PB_GO := TRUE
