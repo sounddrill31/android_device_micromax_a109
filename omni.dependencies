@@ -1,0 +1,14 @@
+[
+  {
+    "remote":"omnirom",
+    "repository": "android_vendor_qcom_opensource_commonsys",
+    "target_path": "vendor/qcom/opensource/commonsys",
+    "revision":"android-9.0"
+  }
+  {
+	"remote":"github"
+	"repository": "sounddrill31/proprietary_vendor_micromax_a109",
+	"target_path": "vendor/micromax/A109",
+	"revision":"main"
+  }
+]
